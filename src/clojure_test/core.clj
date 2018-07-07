@@ -17,5 +17,8 @@
   ([] (messenger "This is the default"))
   ([arg] (str "The message is: " arg)))
 
-
+; test variadic arg functions
+; TODO: expand the 'persons' list to print correctly
+(defn multi-greet [greeting & persons]
+  (println greeting persons))
 
