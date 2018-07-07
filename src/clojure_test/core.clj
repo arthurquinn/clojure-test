@@ -12,3 +12,10 @@
 (defn greet [name]
   (str "Hello, " name "."))
 
+; test multi-arity functions
+(defn messenger
+  ([] (messenger "This is the default"))
+  ([arg] (str "The message is: " arg)))
+
+
+
