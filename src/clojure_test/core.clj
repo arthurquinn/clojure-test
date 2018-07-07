@@ -8,3 +8,7 @@
 
 (defn my-fun [a b c]
   (str a " " b " " c))
+
+(defn greet [name]
+  (str "Hello, " name "."))
+
