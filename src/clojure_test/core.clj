@@ -18,9 +18,8 @@
   ([arg] (str "The message is: " arg)))
 
 ; test variadic arg functions
-; TODO: expand the 'persons' list to print correctly
 (defn multi-greet [greeting & persons]
-  (println greeting persons))
+  (apply println greeting persons))
 
 ; immediately invoke anonymous function
 ( (fn [message] (println message)) "Hello!" )
