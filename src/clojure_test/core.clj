@@ -27,5 +27,15 @@
 ; bind anonymous function to farewell using def
 (def farewell (fn [name] (str "Goodbye," name)))
 
+(defn extra-messenger [msg]
+  (let [a 7
+        b 5
+        c (clojure.string/capitalize msg)]
+    (println a b c)))
+
+
+
+
+
 
 
