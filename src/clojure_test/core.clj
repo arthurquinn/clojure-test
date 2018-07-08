@@ -22,3 +22,11 @@
 (defn multi-greet [greeting & persons]
   (println greeting persons))
 
+; immediately invoke anonymous function
+( (fn [message] (println message)) "Hello!" )
+
+; bind anonymous function to farewell using def
+(def farewell (fn [name] (str "Goodbye," name)))
+
+
+
