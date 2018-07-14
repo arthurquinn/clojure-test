@@ -28,3 +28,15 @@
   (assert (= n (f)))
   (assert (= n (f :foo)))
   (assert (= n (apply f :foo (range)))))
+
+(defn triplicate [f] (f) (f) (f))
+
+(defn opposite
+  [f]
+  (fn
+    ([] (not (f)))
+    ([x] (not (f x)))
+    ([x y] (not (f x y)))
+    ([x y & zs] (not (apply f x y zs)))))
+
+
